@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?ba0ebc47079323c735adaa3121e1ae4b") format("truetype"),
+url("./flaticon.woff?ba0ebc47079323c735adaa3121e1ae4b") format("woff"),
+url("./flaticon.woff2?ba0ebc47079323c735adaa3121e1ae4b") format("woff2"),
+url("./flaticon.eot?ba0ebc47079323c735adaa3121e1ae4b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?ba0ebc47079323c735adaa3121e1ae4b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, 
+i[class*=" flaticon-"]:before,
+span[class^="flaticon-"]:before, 
+span[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-award-1:before {
+    content: "\f101";
+}
+.flaticon-award:before {
+    content: "\f102";
+}
+.flaticon-climb:before {
+    content: "\f103";
+}
+.flaticon-climbing-wall-1:before {
+    content: "\f104";
+}
+.flaticon-climbing-wall:before {
+    content: "\f105";
+}
+.flaticon-climbing:before {
+    content: "\f106";
+}
+.flaticon-credit-card:before {
+    content: "\f107";
+}
+.flaticon-customer-service:before {
+    content: "\f108";
+}
+.flaticon-destination:before {
+    content: "\f109";
+}
+.flaticon-diamond:before {
+    content: "\f10a";
+}
+.flaticon-discount:before {
+    content: "\f10b";
+}
+.flaticon-email:before {
+    content: "\f10c";
+}
+.flaticon-guarantee:before {
+    content: "\f10d";
+}
+.flaticon-headphones:before {
+    content: "\f10e";
+}
+.flaticon-helmet:before {
+    content: "\f10f";
+}
+.flaticon-location:before {
+    content: "\f110";
+}
+.flaticon-message:before {
+    content: "\f111";
+}
+.flaticon-money-back:before {
+    content: "\f112";
+}
+.flaticon-mountain:before {
+    content: "\f113";
+}
+.flaticon-pay:before {
+    content: "\f114";
+}
+.flaticon-rating:before {
+    content: "\f115";
+}
+.flaticon-release-device:before {
+    content: "\f116";
+}
+.flaticon-right-quote:before {
+    content: "\f117";
+}
+.flaticon-rock:before {
+    content: "\f118";
+}
+.flaticon-search-1:before {
+    content: "\f119";
+}
+.flaticon-search:before {
+    content: "\f11a";
+}
+.flaticon-security:before {
+    content: "\f11b";
+}
+.flaticon-shopping-bag:before {
+    content: "\f11c";
+}
+.flaticon-speed:before {
+    content: "\f11d";
+}
+.flaticon-support:before {
+    content: "\f11e";
+}
+.flaticon-target:before {
+    content: "\f11f";
+}
+.flaticon-team:before {
+    content: "\f120";
+}
+.flaticon-telephone-1:before {
+    content: "\f121";
+}
+.flaticon-telephone:before {
+    content: "\f122";
+}
+.flaticon-trophy:before {
+    content: "\f123";
+}
