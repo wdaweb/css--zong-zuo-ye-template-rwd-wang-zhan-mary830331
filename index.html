@@ -13,50 +13,67 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
   <div id="header">
-    <a class="logo" href="./index.html"><img src="./img/logo-white.png"></a>
-    <a id="bar" class="center" href="#"><i class="fas fa-bars fa-lg"></i></a>
+    <a class="logo" href="#"><img src="./img/logo-white.png"></a>
+    <div class="right">
+      <div class="get-a-quote">
+        <a href="#" class=" btn1-1">Get A Quote</a>
+        <input id="bar1" type="checkbox">
+        <label for="bar1" class="center bar"><i class="fas fa-ellipsis-v"></i></label>
+      </div>
+      <input id="bar" type="checkbox">
+      <label for="bar" class="center bar bar-1"><i class="fas fa-bars fa-lg"></i></label>
+    </div>
     <div id="menu">
-      <div style="position: relative;">
-        <a class="a" href="./index.html">HOME</a>
-        <a class="add home1" href="#"><i id="minus1" class="fas fa-plus"></i></a>
+      <div class="menu001">
+        <div class="menu01">
+          <a class="a" href="#">HOME</a>
+          <a class="add home1" href="#"><i id="minus1" class="fas fa-plus"></i></a>
+        </div>
+        <ul class="home">
+          <li><a href="#">home one</a></li>
+          <li><a href="#">home two</a></li>
+          <li><a href="#">home three</a></li>
+        </ul>
       </div>
-      <ul class="home">
-        <li><a href="#">home one</a></li>
-        <li><a href="#">home two</a></li>
-        <li><a href="#">home three</a></li>
-      </ul>
-      <div><a href="#">ABOUT</a></div>
-      <div style="position: relative;">
-        <a href="#">SERVICES<a class="add services1" href="#"><i id="minus2" class="fas fa-plus"></i></a></a>
+      <div class="menu002"><a href="#">ABOUT</a></div>
+      <div class="menu003">
+        <div class="menu03">
+          <a href="#">SERVICES<a class="add services1" href="#"><i id="minus2" class="fas fa-plus"></i></a></a>
+        </div>
+        <ul class="services">
+          <li><a href="#">Service Details</a></li>
+        </ul>
       </div>
-      <ul class="services">
-        <li><a href="#">Service Details</a></li>
-      </ul>
-      <div style="position: relative;">
-        <a href="#">PAGES<a class="add pages1" href="#"><i id="minus3" class="fas fa-plus"></i></a></a>
+      <div class="menu004">
+        <div class="menu04">
+          <a href="#">PAGES<a class="add pages1" href="#"><i id="minus3" class="fas fa-plus"></i></a></a>
+        </div>
+        <ul class="pages">
+          <li><a href="#">Why Choose Us</a></li>
+          <li><a href="#">team</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">news</a></li>
+          <li><a href="#">fqa</a></li>
+        </ul>
       </div>
-      <ul class="pages">
-        <li><a href="#">Why Choose Us</a></li>
-        <li><a href="#">team</a></li>
-        <li><a href="#">portfolio</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#">fqa</a></li>
-      </ul>
-      <div style="position: relative;">
-        <a href="#">NEW</a>
-        <a class="add new1" href="#"><i id="minus4" class="fas fa-plus"></i></a>
+      <div class="menu005">
+        <div class="menu05">
+          <a href="#">NEW</a>
+          <a class="add new1" href="#"><i id="minus4" class="fas fa-plus"></i></a>
+        </div>
+        <ul class="new">
+          <li><a href="#">News Standard</a></li>
+          <li><a href="#">news grid</a></li>
+          <li><a href="#">news details</a></li>
+        </ul>
       </div>
-      <ul class="new">
-        <li><a href="#">News Standard</a></li>
-        <li><a href="#">news grid</a></li>
-        <li><a href="#">news details</a></li>
-      </ul>
-      <div><a href="#">CONTACT</a></div>
-
+      <div class="menu006"><a href="#">CONTACT</a></div>
+    </div>
     </div>
   </div>
   <section id="banner" class="center banner">
@@ -69,9 +86,9 @@
     </div>
 
   </section>
-  <section class="center" style="top: -150px; position: relative;">
-    <div>
-      <div class="box text-align">
+  <section class="center" style="top: -150px; position: relative;transition: 1.5s;">
+    <div class="center">
+      <div class="box text-align guided-tours">
         <img src="./img/icon-1.png">
         <h2>GUIDED TOURS</h2>
         <p>To use an analogy that everyone can relate to, our seasoned team has “seen the movie” before.</p>
@@ -97,7 +114,7 @@
       </div>
     </div>
   </section>
-  <!-- <section class="box1 ">
+  <section class="box1 ">
     <div class="container center">
       <div class="box1-1">
         <div class="img01">
@@ -209,7 +226,7 @@
         <span>OUR SERVICES</span>
         <h2>WE ARE TRUSTED FOR OUR SERVICES</h2>
       </div>
-      <div class="center ">
+      <div class="center " style="padding-bottom: 120px;">
         <div class="box4">
           <div class=" box4-1">
             <div class="black-box text-align">
@@ -270,110 +287,329 @@
         </div>
       </div>
     </div>
+    <div class="center">
+      <div class="photobox">
+        <div class="video">
+          <div class="black-box-play ">
+            <div class="btn-play ">
+              <a href="https://www.youtube.com/watch?v=EEJFMdfraVY">
+                <h4>PLAY</h4>
+              </a>
+            </div>
+          </div>
+        </div>
 
-    <div class="video">
-      <div class="black-box-play ">
-        <div class="btn-play ">
-          <a href="https://www.youtube.com/watch?v=EEJFMdfraVY">
-            <h4>PLAY</h4>
-          </a>
+        <div class="text2 ">
+          <div class="container text">
+            <span>INTRO VIDEO</span>
+            <h2>WATCH VIDEO OF OUR CLIMBERS</h2>
+            <p>Our lessons are available for both beginner and advanced levels. For beginners we have an introductory
+              course
+              as well as a full course The beginners’ introductory.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container text">
-      <span>INTRO VIDEO</span>
-      <h2>WATCH VIDEO OF OUR CLIMBERS</h2>
-      <p>Our lessons are available for both beginner and advanced levels. For beginners we have an introductory
-        course
-        as well as a full course The beginners’ introductory.</p>
+  </section>
+  <section class="container section-120">
+    <div class="text-align title1">
+      <span class="line">PORTFOLIO</span>
+      <h1>CASE STUDY</h1>
     </div>
-  </section> -->
-<section class="container">
-        <span class="line">PORTFOLIO</span>
-        <h1 style="text-align: center;">CASE STUDY</h1>
-        <div class="box text-align" >
-            <div class="rock-climbing ">
-                <div class="photo"></div>
-            <div id="photo-box" class="photo-box text" style="margin-bottom: 0px;margin-top: 0px;">
-                <span>ADVENTURE</span>
-                <a href="#"><h2>ROCK CLIMBING</h2></a>
+    <div class="center ">
+      <div class="photobox">
+        <div class="px-15">
+          <div class="rock-climbing ">
+            <div class="photo"></div>
+            <div class="photo-box text">
+              <span>ADVENTURE</span>
+              <a href="#">
+                <h2>ROCK CLIMBING</h2>
+              </a>
             </div>
+          </div>
         </div>
-            <div class="camp-around">
-                <div class="photo" ></div>
-                <div  id="photo-box" class=" photo-box text" style="margin-bottom: 0px;margin-top: 0px;">
-                    <span>ADVENTURE</span>
-                    <a href="#"><h2>ROCK CLIMBING</h2></a>
+        <div class="px-15">
+          <div class="camp-around">
+            <div class="photo"></div>
+            <div class=" photo-box text">
+              <span>ADVENTURE</span>
+              <a href="#">
+                <h2>ROCK CLIMBING</h2>
+              </a>
             </div>
+          </div>
         </div>
-            <div class="rock-mountaining">
-                <div class="photo" ></div>
-                <div  id="photo-box" class=" photo-box text" style="margin-bottom: 0px;margin-top: 0px;">
-                    <span>ADVENTURE</span>
-                    <a href="#"><h2>ROCK CLIMBING</h2></a>
+        <div class="px-15">
+          <div class="rock-mountaining">
+            <div class="photo"></div>
+            <div class=" photo-box text">
+              <span>ADVENTURE</span>
+              <a href="#">
+                <h2>ROCK CLIMBING</h2>
+              </a>
             </div>
+          </div>
         </div>
-            <div class="climbing-practice">
-                <div class="photo" ></div>
-                <div  id="photo-box" class=" photo-box text" style="margin-bottom: 0px;margin-top: 0px;">
-                    <span>ADVENTURE</span>
-                    <a href="#"><h2>ROCK CLIMBING</h2></a>
+        <div class="px-15">
+          <div class="climbing-practice">
+            <div class="photo"></div>
+            <div class=" photo-box text">
+              <span>ADVENTURE</span>
+              <a href="#">
+                <h2>ROCK CLIMBING</h2>
+              </a>
             </div>
+          </div>
         </div>
-            <div class="rock-climbing-practice">
-                <div class="photo" ></div>
-                <div  id="photo-box" class=" photo-box text" style="margin-bottom: 0px;margin-top: 0px;">
-                    <span>ADVENTURE</span>
-                    <a href="#"><h2>ROCK CLIMBING</h2></a>
+        <div class="px-15 photo2">
+          <div class="rock-climbing-practice">
+            <div class="photo"></div>
+            <div class=" photo-box text">
+              <span>ADVENTURE</span>
+              <a href="#">
+                <h2>ROCK CLIMBING</h2>
+              </a>
             </div>
+          </div>
         </div>
-        </div>
-    </section>
-      <!-- <Section class="container ">
+      </div>
+    </div>
+  </section>
+  <Section class="container" style="margin-bottom: 90px;">
+    <div class="text-align title1">
       <span class="line">TEAM</span>
-      <h1 style="text-align: center;">OUR TEAM MEMBERS</h1>
-      <div class="center">
-      <div class="team">
-        <img class="teamphoto01 " src="./img/team1.jpg">
-        <a class="center" href="#">+</a>
-        <div class="team-info">
-          <h2>ROSA D.WILLIAM</h2>
-          <span>FOUNDER</span>
+      <h1>OUR TEAM MEMBERS</h1>
+    </div>
+    <div class="center">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="teamimg">
+              <img src="./img/team1.jpg">
+            </div>
+            <a class="center" href="#">+</a>
+            <div class="team-info">
+              <h2>ROSA D.WILLIAM</h2>
+              <span>FOUNDER</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="teamimg">
+              <img src="./img/team2.jpg">
+            </div>
+            <a class="center" href="#">+</a>
+            <div class="team-info">
+              <h2>ROSA D.WILLIAM</h2>
+              <span>FOUNDER</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="teamimg">
+              <img src="./img/team3.jpg">
+            </div>
+            <a class="center" href="#">+</a>
+            <div class="team-info">
+              <h2>ROSA D.WILLIAM</h2>
+              <span>FOUNDER</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="teamimg">
+              <img src="./img/team04.jpg">
+            </div>
+            <a class="center" href="#">+</a>
+            <div class="team-info">
+              <h2>ROSA D.WILLIAM</h2>
+              <span>FOUNDER</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="teamimg"><img src="./img/team5.jpg"></div>
+            <a class="center" href="#">+</a>
+            <div class="team-info">
+              <h2>ROSA D.WILLIAM</h2>
+              <span>FOUNDER</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </Section>
-    <section class="box text ">
-      <div class="container bg-black cta " style="padding: 80px 30px;">
-      <span>NEED ADVENTUREATION</span>
-      <h1>WE ARE HERE FOR YOUR MEMBERSHIP</h1>
-      <a class="center" href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+    </div>
+  </Section>
+  <section class="container ">
+    <div class="bg-black cta-all">
+      <div class="ctaimg"></div>
+      <img src="./img/cta-img-2.png">
+      <div class="cta">
+        <div class="text" style="padding-left: 30px;margin-top: 0;">
+          <span>NEED ADVENTUREATION</span>
+          <h1>WE ARE HERE FOR YOUR MEMBERSHIP</h1>
+        </div>
+        <div class="cta-btn center"><a href="#">→</a></div>
       </div>
-    </section>
-    <section class="box text ">
-      <div class="container">
+    </div>
+  </section>
+  <section class="container address1">
+    <div class="text">
       <span>GET IN TOUCH</span>
       <h1>GET CATCH US FROM HERE. RIGHT NOW</h1>
-      </div>
-      <div class="box">
-        <i class="fas fa-home"></i>
-        <div><h4>OFFICE ADDRESS</h4>
-        <p>19/A, Cirikon City hall Tower
-        New York, NYC</p></div>
-          <hr>
+    </div>
+    <div class="center aaa">
+      <div class="address-p">
+        <div class="address">
+          <i class="fas fa-home"></i>
+          <div class="address-text">
+            <h3>OFFICE ADDRESS</h3>
+            <p>19/A, Cirikon City hall Tower
+              New York, NYC</p>
+          </div>
+        </div>
+        <div class="address">
           <i class="fas fa-phone"></i>
-          <div><h4>PHONE NUMBER</h4>
-        <p>+987 876 7765 76 519</p>
-        <p>987 (876) 76 78 89 9</p></div>
-          <hr>
+          <div class="address-text">
+            <h3>PHONE NUMBER</h3>
+            <p>+987 876 7765 76 519</p>
+            <p>987 (876) 76 78 89 9</p>
+          </div>
+        </div>
+        <div class="address">
           <i class="far fa-envelope"></i>
-          <div><h4>EMAIL ADDRESS</h4>
-          <p>info@webmail.com</p>
-        <p>jobs.example@mail.com</p></div>
+          <div class="address-text">
+            <h3>EMAIL ADDRESS</h3>
+            <p>info@webmail.com</p>
+            <p>jobs.example@mail.com</p>
+          </div>
+        </div>
       </div>
-    </section> -->
+      <div class="contact1">
+        <form class="contact-form">
+          <div class="icon">
+            <input type="text" name="" value="Your name">
+            <i class="far fa-user"></i>
+          </div>
+          <div class="icon">
+            <i class="far fa-envelope"></i>
+            <input type="text" name="" value="Your mail">
+          </div>
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+            <input type="text" name="" value="Your phone">
+          </div>
+          <div class="icon">
+            <i class="far fa-edit"></i>
+            <textarea style="color: #fff;" rows="5" placeholder="Enter message" name="message"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- 一堆山logo -->
+  <section class="mountain">
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/01.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/02.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/03.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/04.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/05.png" alt=""></div>
 
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-black">
+    <div class="container" style="padding-top:50px ;">
+      <div class="center">
+        <div class="footer1">
+          <div class="sigma_footer-widget">
+            <div class="sigma_footer-logo mb-4">
+              <img src="/img/logo-white.png" alt="logo">
+            </div>
+            <div class="row">
+              <div class="col-sm-9">
+                <p class="mb-0">Rock climbing is a sport in which participants climb up, down or across natural rock
+                  formations or artificial rock walls. </p>
+              </div>
+            </div>
+            <ul class="icon2">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer2">
+          <div class="footer-widget">
+            <h3 class="widget-title">Quick Links</h3>
+            <ul class="sigma_footer-links">
+              <li>
+                <a href="services.html">Services</a>
+              </li>
+              <li>
+                <a href="portfolio-grid.html">Portfolio</a>
+              </li>
+              <li>
+                <a href="team.html">Team</a>
+              </li>
+              <li>
+                <a href="why-choose-us.html">Why Us</a>
+              </li>
+              <li>
+                <a href="blog-grid.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer3">
+          <div class="footer-widget">
+            <h3 class="widget-title">Useful Links</h3>
+            <ul class="sigma_footer-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="team.html">Members</a>
+              </li>
+              <li>
+                <a href="contact.html">Contacts</a>
+              </li>
+              <li>
+                <a href="portfolio-grid.html">Case Study</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer4">
+          <div class="footer-widget">
+            <h3 class="widget-title">Subscribe</h3>
+            <form>
+              <input type="email" name="email" placeholder="Email">
+              <button type="button" class="btn1-1">Subscribe</button>
+              <p class="mb-0 mt-3">Get The Latest Updates via email. Any time you may unsubscribe</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./jquery-3.6.0.min.js"></script>
   <script>
     $("#menu").hide();
@@ -464,31 +700,94 @@
 
 
     for (let i = 0; i <= 5; i++) {
-      $('.photo-box').eq(i).mouseover(function () {
+      $('.photo').eq(i).mouseover(function () {
         if (photo) {
           $(".photo-box").eq(i).addClass("photo-box01")
           $(".photo").eq(i).addClass("photo01")
         }
       })
 
-      $('.photo-box').eq(i).mouseout(function () {
+      $('.photo').eq(i).mouseout(function () {
         if (photo) {
           $(".photo-box").eq(i).removeClass("photo-box01")
           $(".photo").eq(i).removeClass("photo01")
         }
       })
     }
-    $(window).scroll(function () {
-      var scroll = $(this).scrollTop()
-
-      if (scroll >= $(window).offset().top - 100 && scroll < $("#header").offset().top) {
-
-        $('#header').append(`
-    <a class="logo" href="./index.html"><img src="./img/logo.png"></a>
-        <a id="bar" href="#"><i class="fas fa-bars fa-lg"></i></a>
-        `)
+    // 輪播圖
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000
+      },
+      breakpoints: {
+        760: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 3,
+        }
       }
-    })
+    });
+    // 山logo-輪播圖
+    var swiper1 = new Swiper(".mySwiper1", {
+      slidesPerView: 5,
+      loop: true,
+      breakpoints: {
+        420: {
+          slidesPerView: 1,
+        },
+        760: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+        1400: {
+          slidesPerView: 5,
+        }
+      }
+    });
+
+    const home1 = document.querySelector('.home')
+    const pages1 = document.querySelector('.pages')
+    const new1 = document.querySelector('.new')
+    const services1 = document.querySelector('.services')
+    const bar1 = document.querySelector('#menu')
+
+    window.onresize = start
+    function start() {
+      if (window.innerWidth <= 768) {
+        home1.style.display = "none"
+        pages1.style.display = "none"
+        new1.style.display = "none"
+        services1.style.display = "none"
+
+      }
+
+      if (window.innerWidth > 992) {
+        home1.style.display = "block"
+        pages1.style.display = "block"
+        new1.style.display = "block"
+        services1.style.display = "block"
+        bar1.style.display = "block"
+
+      }
+
+    }
+    start()
   </script>
 </body>
 
